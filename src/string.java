@@ -14,15 +14,33 @@ public class string {
 	}
 	
 	public String uppercaseChars(String str) {
-		return null;
+		String uppercase="";
+		
+		for(int i=0; i<str.length(); i++)
+			if(Character.isUpperCase(str.charAt(i)))
+				uppercase+=str.charAt(i);
+		
+		return uppercase;
 	}
 	
 	public static String lowerCaseChars(String str) {
-		return null;
+		String lowercase="";
+		
+		for(int i=0; i<str.length(); i++)
+			if(Character.isLowerCase(str.charAt(i)))
+				lowercase+=str.charAt(i);
+		
+		return lowercase;
 	}
 	
 	public String nonLetterChars(String str) {
-		return null;
+		String notLetter="";
+		
+		for(int i=0; i<str.length(); i++)
+			if(!Character.isLetter(str.charAt(i)))
+				notLetter+=str.charAt(i);
+		
+		return notLetter;
 	}
 
 }
